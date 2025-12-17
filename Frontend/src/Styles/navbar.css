@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 .navbar {
@@ -13,11 +14,12 @@
   background: #2A6F6F;
 
   color: #F8F9FA;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 .nav-links li a {
   color: #F8F9FA;
@@ -41,4 +43,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
 }

@@ -7,9 +7,14 @@
   flex-direction: column;
   padding: 1.4rem 2rem;
   background: #224b4b;
+  gap: 7px;
 }
 .footer a {
-  color: #00b4d8;
+  color: white;
   text-decoration: none;
   margin: 0 0.5rem;
+}
+
+.footer a:hover{
+  text-decoration: underline;
 }

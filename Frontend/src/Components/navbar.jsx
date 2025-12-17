@@ -11,6 +11,11 @@ const Navbar = () => {
         <li><a href="#features">Features</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <ul className="nav-links">
+        <li><a href="#Home">login</a></li>
+        <li><a href="#destinations">Sign up</a></li>
+        
+      </ul>
     </nav>
   );
 };

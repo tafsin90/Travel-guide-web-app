@@ -1,0 +1,28 @@
+.country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 70px;
+}
+
+.heading-lock{
+    display: flex;
+    justify-content: center;
+
+    font-size: 40px;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.choose-lock{
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+    padding-bottom: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.location {
+    background-color: #f5f5f5;
+    padding: 2.5rem 0;
+}
