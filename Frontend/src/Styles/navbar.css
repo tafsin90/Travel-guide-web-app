@@ -3,16 +3,18 @@
   
 }
 
+
 .navbar {
   position: fixed; 
 
   width: 100%;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 2rem;
   background: #2A6F6F;
-
+  z-index: 1000;
   color: #F8F9FA;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
