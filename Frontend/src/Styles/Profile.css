@@ -1,0 +1,237 @@
+.profile-container {
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.profile-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.profile-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 2rem;
+}
+
+.logout-button {
+  padding: 0.5rem 1.5rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-button:hover {
+  background: #c82333;
+}
+
+.profile-info {
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+}
+
+.info-item strong {
+  color: #555;
+  min-width: 150px;
+}
+
+.visited-places {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.visited-places h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.places-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.place-item {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.place-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.place-district {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.place-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.no-places {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.wishlist-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.wishlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.wishlist-header h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.toggle-search-btn {
+  padding: 0.5rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-search-btn:hover {
+  background: #5568d3;
+}
+
+.search-section {
+  margin-top: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background: #e9ecef;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.result-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.result-district {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.add-wishlist-btn {
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-wishlist-btn:hover {
+  background: #218838;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #fcc;
+}
+
+

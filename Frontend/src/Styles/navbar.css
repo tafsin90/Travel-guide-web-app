@@ -49,3 +49,30 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  font-family: inherit;
+}
+
+.navbar .logout-btn:hover {
+  background: #c82333;
+}
+
+.navbar .user-name {
+  color: #A8DADC;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}

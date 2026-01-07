@@ -2,7 +2,6 @@ import express from 'express'
 import cors from 'cors'
 import authRoutes from './routes/auth.js'
 import userRoutes from './routes/user.js'
-import searchRoutes from './routes/search.js'
 import { db } from './db.js'
 
 const app = express()
@@ -41,7 +40,6 @@ app.get('/api/districts/:id/spots', async (req, res) => {
 
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
-app.use('/api/search', searchRoutes)
 
 app.listen(5000, () => {
   console.log('Server running on port 5000')
