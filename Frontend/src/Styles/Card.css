@@ -74,6 +74,54 @@
     color: #444;
 }
 
+/* --- Card Wrapper for Actions --- */
+.card2-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 240px;
+}
+
+/* --- Action Buttons --- */
+.card-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin-top: -12px;
+    position: relative;
+    z-index: 1;
+}
+
+.action-btn {
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.action-btn:hover {
+    background: #e9e9e9;
+}
+
+.action-btn .icon {
+    opacity: 0.6;
+}
+
+.action-btn.active {
+    background: #dff5e1; /* simple green-ish active */
+    border-color: #9ad29e;
+}
+
+.action-btn.active .icon {
+    opacity: 1;
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
     .country {

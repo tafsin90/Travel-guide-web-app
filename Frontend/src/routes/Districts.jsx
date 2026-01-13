@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../Styles/Card.css'
 
 function Districts() {
-
     const [districts, setDistricts] = useState([])
 
     useEffect(() => {
@@ -36,7 +35,6 @@ function Districts() {
                         <div className="spot2">{d.name}</div>
                     </div>
                 </div>
-
             ))}
         </div>
     )

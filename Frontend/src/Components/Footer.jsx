@@ -1,4 +1,3 @@
-import React from 'react';
 import '../Styles/Footer.css';
 
 const Footer = () => {
@@ -10,7 +9,6 @@ const Footer = () => {
         <a href="https://www.instagram.com/taaaaafssiiiiin/?hl=en" target="_blank">Instagram</a>
         <a href="https://x.com/tafsin_03" target="_blank">X</a>
         <a href="https://www.reddit.com/user/enigma-55/" target="_blank">Reddit</a>
-
       </p>
     </footer>
   );

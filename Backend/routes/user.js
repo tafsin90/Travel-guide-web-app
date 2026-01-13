@@ -25,7 +25,24 @@ router.get('/profile', auth, async (req, res) => {
       ORDER BY v.visited_at DESC
     `, [userId])
 
-    res.json({ totalVisited, places })
+    // Get wishlist count
+    const [wishCountRows] = await db.query(
+      'SELECT COUNT(*) as total FROM wishlist WHERE user_id = ?',
+      [userId]
+    )
+    const totalWishlist = wishCountRows[0]?.total || 0
+
+    // Get wishlist places with district name
+    const [wishlist] = await db.query(`
+      SELECT t.id, t.spot_name, d.name as district_name, t.image
+      FROM wishlist w
+      JOIN tourist_spots t ON w.spot_id = t.id
+      JOIN districts d ON t.district_id = d.id
+      WHERE w.user_id = ?
+      ORDER BY w.id DESC
+    `, [userId])
+
+    res.json({ totalVisited, places, totalWishlist, wishlist })
   } catch (err) {
     console.error('Profile error:', err)
     res.status(500).json({ message: 'Server error fetching profile' })

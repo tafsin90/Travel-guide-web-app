@@ -9,7 +9,6 @@ app.use(cors())
 app.use(express.json())
 app.use('/districts', express.static('public/districts'))
 
-
 app.get('/api/districts', async (req, res) => {
   try {
     const sql = 'SELECT id, name, image_url FROM districts'
@@ -19,8 +18,6 @@ app.get('/api/districts', async (req, res) => {
     res.status(500).json({ error: err.message })
   }
 })
-
-
 
 app.get('/api/districts/:id/spots', async (req, res) => {
   const districtId = req.params.id

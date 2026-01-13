@@ -122,6 +122,9 @@ export default function Profile() {
           <div className="info-item">
             <strong>Total Visited Places:</strong> {data?.totalVisited || 0}
           </div>
+          <div className="info-item">
+            <strong>Total Wishlist Places:</strong> {data?.totalWishlist || 0}
+          </div>
         </div>
 
         <div className="visited-places">
@@ -142,6 +145,27 @@ export default function Profile() {
             </div>
           ) : (
             <p className="no-places">No visited places yet. Start exploring!</p>
+          )}
+        </div>
+
+        <div className="wishlist-places">
+          <h3>Wishlist</h3>
+          {data?.wishlist && data.wishlist.length > 0 ? (
+            <div className="places-list">
+              {data.wishlist.map((place) => (
+                <div key={place.id} className="place-item">
+                  <div>
+                    <span className="place-name">{place.spot_name}</span>
+                    <span className="place-district"> - {place.district_name}</span>
+                  </div>
+                  {place.image && (
+                    <img src={place.image} alt={place.spot_name} className="place-image" />
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="no-places">No wishlist places yet.</p>
           )}
         </div>
 

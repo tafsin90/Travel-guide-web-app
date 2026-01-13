@@ -1,9 +1,7 @@
-import React from 'react'
 import '../Styles/Card.css'
 import '../Styles/Location.css'
 import bangladeshImg from '../images/Bangladesh-1_cropped_processed_by_imagy.jpg'
 import GlobalImg from '../images/worldWide_cropped_processed_by_imagy.jpg'
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function Location() {
@@ -24,7 +22,6 @@ function Location() {
                     </div>
                 </div>
 
-
                 <div className='card'>
                     <div className="card-image">
                         <img src={GlobalImg} alt="Global" />
@@ -38,8 +35,5 @@ function Location() {
         </div>
     )
 }
-
-
-
 
 export default Location
